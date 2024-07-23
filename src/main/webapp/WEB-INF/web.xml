@@ -19,4 +19,14 @@
     <servlet-name>toDoListServlet</servlet-name>
     <url-pattern>/toDoListServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Under_18</display-name>
+    <servlet-name>Under_18</servlet-name>
+    <servlet-class>my.gov.spr.mysprsemak.Under_18</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Under_18</servlet-name>
+    <url-pattern>/Under_18</url-pattern>
+  </servlet-mapping>
 </web-app>
