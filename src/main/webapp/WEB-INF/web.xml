@@ -29,4 +29,14 @@
     <servlet-name>Under_18</servlet-name>
     <url-pattern>/Under_18</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CheckLocale</display-name>
+    <servlet-name>CheckLocale</servlet-name>
+    <servlet-class>my.gov.spr.mysprsemak.CheckLocale</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckLocale</servlet-name>
+    <url-pattern>/CheckLocale</url-pattern>
+  </servlet-mapping>
 </web-app>
