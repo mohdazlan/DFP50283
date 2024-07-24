@@ -1,6 +1,8 @@
 package my.gov.spr.mysprsemak;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -39,6 +41,17 @@ public class Under_18 extends HttpServlet {
 		System.out.println("System is running");
 		response.setContentType("text/html");
 		System.out.println("you are under 18");
+		
+		PrintWriter printWrite = response.getWriter();
+		String data = request.getParameter("name");
+		
+		if(data.equals("John")) {
+			printWrite.print("<h1>First Link Request locale : " + request.getLocale() + "</h1>");
+		} else if(data.equals("Ali")) {
+			printWrite.print("<h1>Second Link Request locale : " + request.getLocale() + "</h1>");
+		} else {
+			printWrite.print("<h1>Third Link Request locale : " + request.getLocale() + "</h1>");
+		}
 		
 	}
 	
