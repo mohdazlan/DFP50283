@@ -39,4 +39,14 @@
     <servlet-name>CheckLocale</servlet-name>
     <url-pattern>/CheckLocale</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>basicServlet</display-name>
+    <servlet-name>basicServlet</servlet-name>
+    <servlet-class>com.amazon.taskmanagement.basicServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>basicServlet</servlet-name>
+    <url-pattern>/basicServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
